@@ -3,10 +3,12 @@ def f(x):
     return (1/3)*(x+3)**4+x
 
 def diff(x):
+    # <---calcula la primera derivada de la funcion--->
     dx = 0.00001
     return (f(x + dx) - f(x))/dx
 
 def diff2(x):
+    #<---calcula la segunda deriva en el punto x, se puede incluir en la funcion de primera derivada--->
     h = 0.0001
     return (diff(x+h)-diff(x))/h
 
